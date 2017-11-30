@@ -1,6 +1,6 @@
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import quoters.TerminatroQuoterImpl;
+import quoters.TerminatorQuoterImpl;
 
 
 public class SimpleTest {
@@ -13,7 +13,7 @@ public class SimpleTest {
     ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext(
         "spring-config.xml");
 
-    classPathXmlApplicationContext.getBean(TerminatroQuoterImpl.class).sayQuote();
+    classPathXmlApplicationContext.getBean(TerminatorQuoterImpl.class).sayQuote();
 
   }
 
