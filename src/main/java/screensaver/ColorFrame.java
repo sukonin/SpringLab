@@ -8,12 +8,9 @@ import javax.swing.WindowConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-
 @Component
-public class ColorFrame extends JFrame {
+public abstract class ColorFrame extends JFrame {
 
-  @Autowired
-  private Color color;
 
   public ColorFrame() throws HeadlessException {
     setSize(200, 200);
@@ -24,9 +21,10 @@ public class ColorFrame extends JFrame {
   public void showOnRandomPlace() {
     Random random = new Random();
     setLocation(random.nextInt(1200), random.nextInt(700));
-    getContentPane().setBackground(color);
+    getContentPane().setBackground(getColor());
     repaint();
 
   }
 
+  protected abstract Color getColor();
 }
