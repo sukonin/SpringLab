@@ -5,7 +5,6 @@ import java.awt.HeadlessException;
 import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component

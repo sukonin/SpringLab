@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
+
 
 @Configuration
 @ComponentScan(basePackages = "screensaver")
@@ -32,7 +32,6 @@ public class Config {
       }
     };
   }
-
 
   public static void main(String[] args) throws InterruptedException {
     AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
