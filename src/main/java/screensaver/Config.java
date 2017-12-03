@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ScopedProxyMode;
 public class Config {
 
   @Bean
-  @Scope(value = "prototype" )
+  @Scope("periodical" )
   public Color color() {
     Random random = new Random();
 
