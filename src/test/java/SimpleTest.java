@@ -12,6 +12,8 @@ public class SimpleTest {
     ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext(
         "spring-config.xml");
 
+    classPathXmlApplicationContext.getBean(Quoter.class).sayQuote();
+
 
   }
 

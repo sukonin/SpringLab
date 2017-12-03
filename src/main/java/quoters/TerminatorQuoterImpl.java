@@ -3,7 +3,12 @@ package quoters;
 import javax.annotation.PostConstruct;
 
 @Profiling
+@DeprecatedClass(newImpl = T1000.class)
 public class TerminatorQuoterImpl implements Quoter {
+
+  public void setRepeat(int repeat) {
+    this.repeat = repeat;
+  }
 
   @InjectRandomInt(min = 1, max = 10)
   private int repeat;
