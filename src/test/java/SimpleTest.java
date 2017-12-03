@@ -11,10 +11,8 @@ public class SimpleTest {
 
     ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext(
         "spring-config.xml");
-    while (true) {
-      Thread.sleep(1000);
-      classPathXmlApplicationContext.getBean(Quoter.class).sayQuote();
-    }
+
+
   }
 
 }
